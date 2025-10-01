@@ -9,16 +9,16 @@
 fibOut = 0;
 fib1 = 0
 fib2 = 1;
-user_input = 0;
+
+user_input = int(input("Enter a number to know the fib sequence to it: "));
 
 while (user_input < 0):
-  user_input = input("Enter a number to know the fib sequence to it: ");
-  if (user_input < 0):
     print("Please enter a positive number!\n");
+    user_input = input("Enter a number to know the fib sequence to it: ");
 
 for x in range (user_input):
+  print(fibOut);
   fibOut = fib1 + fib2;
-  print("fibOut\n");
   fib2 = fib1;
   fib1 = fibOut;
 
