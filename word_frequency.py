@@ -35,14 +35,25 @@ while (is_sentence(user_sentence) == False):
     print("This does not meet the criteria for a sentence.")
     user_input = input("Enter a sentence: ")
 
-words []
-numbers [1] * words
+words = []
+numbers = []
+index = 0
 
-words = user_input.split();
-for x in range(words):
-    for y in range (words):
-        if (words [x].equals(words[y]):
-            numbers[x] = numbers[x] + 1;
+words_list = user_sentence.split()
 
-for z in range (words):
-    print(words[z] + ": " + words[z]);
+for x in words_list:
+
+    normal_form = x.lower()
+    normal_form = normal_form.replace(",", "")
+    normal_form = normal_form.replace(".", "")
+    normal_form = normal_form.replace("!", "")
+
+    if normal_form in words:
+        index = words.index(normal_form)
+        numbers[index] += 1;
+    else:
+        words.append(normal_form)
+        numbers.append(1)
+
+for z in range (len(words)):
+    print(words[z] + ": " + str(numbers[z]));
