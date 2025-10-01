@@ -29,9 +29,20 @@ def is_sentence(text):
 
     return True
 
-user_sentence = input("Enter a sentence: ")
+user_input = input("Enter a sentence: ")
 
 while (is_sentence(user_sentence) == False):
     print("This does not meet the criteria for a sentence.")
     user_input = input("Enter a sentence: ")
-    
+
+words [];
+numbers [1] * words;
+
+words = user_input.split();
+for x in range(words):
+    for y in range (words):
+        if (words [x].equals(words[y]):
+            numbers[x] = numbers[x] + 1;
+
+for z in range (words):
+    print(words[z] + ": " + words[z]);
