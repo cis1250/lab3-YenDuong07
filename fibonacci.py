@@ -10,7 +10,6 @@ fibOut = 0;
 fib1 = 0
 fib2 = 1;
 user_input = 0;
-output;
 
 while (user_input < 0):
   user_input = input("Enter a number to know the fib sequence to it: ");
